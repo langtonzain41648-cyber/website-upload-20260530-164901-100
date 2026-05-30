@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-免费电视剧高清剧集片库</title>
+  <meta name="description" content="搜索免费电视剧、热门电视剧、高清剧集、电影和各类片单。">
+  <meta name="keywords" content="免费电视剧,热门电视剧,电视剧大全,高清剧集,剧集片库,热播电视剧,影片搜索">
+  <meta name="renderer" content="webkit">
+  <meta name="applicable-device" content="pc,mobile">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" aria-label="高清剧集大全">
+      <span class="logo-mark">▶</span>
+      <span>高清剧集大全</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="ranking.html">热播榜</a>
+      <a href="category-hot-drama.html">热播剧场</a><a href="category-hd-series.html">高清剧集</a><a href="category-movie-library.html">电影片库</a><a href="category-suspense-crime.html">悬疑犯罪</a><a href="category-love-city.html">爱情都市</a>
+    </nav>
+    <form class="top-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视作品" aria-label="搜索影视作品">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="展开导航">☰</button>
+  </div>
+  <div class="mobile-panel">
+    <form class="mobile-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视作品" aria-label="搜索影视作品">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="index.html">首页</a>
+    <a href="categories.html">分类总览</a>
+    <a href="ranking.html">热播榜</a>
+    <a href="category-hot-drama.html">热播剧场</a><a href="category-hd-series.html">高清剧集</a><a href="category-movie-library.html">电影片库</a><a href="category-suspense-crime.html">悬疑犯罪</a><a href="category-love-city.html">爱情都市</a><a href="category-comedy-healing.html">喜剧治愈</a><a href="category-action-adventure.html">动作冒险</a><a href="category-animation-fantasy.html">动画奇幻</a><a href="category-family-youth.html">家庭青春</a><a href="category-global-picks.html">环球精选</a>
+  </div>
+</header>
+<main>
+
+<section class="page-hero search-hero">
+  <div class="container">
+    <span class="pill">搜索</span>
+    <h1>搜索高清剧集片库</h1>
+    <p>输入片名、题材、地区、年份或标签，快速找到相关影片详情。</p>
+    <form class="search-page-form" action="search.html" method="get">
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="输入关键词搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+<section class="container search-results-section">
+  <div class="section-heading">
+    <div>
+      <span>RESULT</span>
+      <h2 id="search-title">热门影片</h2>
+    </div>
+    <select id="search-sort" aria-label="排序">
+      <option value="score">按热度</option>
+      <option value="year">按年份</option>
+      <option value="title">按标题</option>
+    </select>
+  </div>
+  <div id="search-results" class="movie-grid"></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>高清剧集大全</h3>
+      <p>免费电视剧页面汇总多类剧集内容，支持按热度、题材和更新时间查看相关片单。</p>
+    </div>
+    <div>
+      <h3>快速入口</h3>
+      <a href="index.html">首页推荐</a>
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">热播榜单</a>
+      <a href="search.html">影片搜索</a>
+    </div>
+    <div>
+      <h3>热门分类</h3>
+      <a href="category-hot-drama.html">热播剧场</a><a href="category-hd-series.html">高清剧集</a><a href="category-movie-library.html">电影片库</a><a href="category-suspense-crime.html">悬疑犯罪</a><a href="category-love-city.html">爱情都市</a><a href="category-comedy-healing.html">喜剧治愈</a>
+    </div>
+    <div>
+      <h3>观看体验</h3>
+      <p>支持电脑、平板与手机浏览，详情页提供高清播放区域和相关推荐。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 高清剧集大全 · 免费电视剧与高清剧集片库</div>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

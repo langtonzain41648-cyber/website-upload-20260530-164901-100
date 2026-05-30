@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索-热门亚洲视频-精选内容持续更新</title>
+  <meta name="description" content="热门亚洲视频搜索页面，可按标题、地区、类型、年份、标签检索片库内容。">
+  <meta name="keywords" content="搜索,热门亚洲视频,亚洲视频,热门视频,精选内容,视频片库,持续更新">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/movie-search-data.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="热门亚洲影视">
+      <span class="brand-icon">▶</span>
+      <span>
+        <strong>热门亚洲影视</strong>
+        <em>精选内容持续更新</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link " href="index.html">首页</a><a class="nav-link " href="categories.html">分类总览</a><a class="nav-link " href="rankings.html">排行榜</a><a class="nav-link is-active" href="search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button type="button">分类浏览</button>
+        <div class="dropdown-panel">
+          <a href="category-hot-asian.html">热门亚洲视频</a><a href="category-featured-video.html">精选视频</a><a href="category-new-release.html">新鲜上架</a><a href="category-editor-choice.html">口碑佳作</a><a href="category-asian-theater.html">亚洲剧场</a><a href="category-weekend-picks.html">周末推荐</a><a href="category-genre-library.html">类型片库</a><a href="category-continuous-update.html">持续更新</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search" action="search.html" method="get">
+      <label class="sr-only" for="site-search">搜索影视作品</label>
+      <input id="site-search" name="q" type="search" placeholder="搜索影视作品...">
+      <button type="submit" aria-label="提交搜索">⌕</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-panel" hidden>
+    <form action="search.html" method="get" class="mobile-search">
+      <input name="q" type="search" placeholder="搜索影视作品...">
+      <button type="submit">搜索</button>
+    </form>
+    <nav aria-label="移动导航">
+      <a class="nav-link " href="index.html">首页</a><a class="nav-link " href="categories.html">分类总览</a><a class="nav-link " href="rankings.html">排行榜</a><a class="nav-link is-active" href="search.html">搜索</a>
+      <div class="mobile-categories">
+        <a href="category-hot-asian.html">热门亚洲视频</a><a href="category-featured-video.html">精选视频</a><a href="category-new-release.html">新鲜上架</a><a href="category-editor-choice.html">口碑佳作</a><a href="category-asian-theater.html">亚洲剧场</a><a href="category-weekend-picks.html">周末推荐</a><a href="category-genre-library.html">类型片库</a><a href="category-continuous-update.html">持续更新</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero search-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>搜索</span></div>
+    <h1>片库搜索</h1>
+    <p>输入影片标题、地区、类型、年份或标签，快速查找相关内容。</p>
+    <form class="big-search" action="search.html" method="get">
+      <input name="q" type="search" placeholder="输入关键词搜索" aria-label="输入关键词搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+<section class="container section">
+  <div class="section-heading compact">
+    <span>⌕</span>
+    <div>
+      <h2 id="search-title">搜索结果</h2>
+      <p id="search-summary">请输入关键词浏览相关影片。</p>
+    </div>
+  </div>
+  <div class="grid grid-3" id="search-results"></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-about">
+      <div class="footer-brand"><span>▶</span><strong>热门亚洲影视</strong></div>
+      <p>热门亚洲视频栏目汇集关注度较高的视频内容，适合浏览亚洲影视分类页面。</p>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <ul><li><a href="category-hot-asian.html">热门亚洲视频</a></li><li><a href="category-featured-video.html">精选视频</a></li><li><a href="category-new-release.html">新鲜上架</a></li><li><a href="category-editor-choice.html">口碑佳作</a></li><li><a href="category-asian-theater.html">亚洲剧场</a></li><li><a href="category-weekend-picks.html">周末推荐</a></li><li><a href="category-genre-library.html">类型片库</a></li><li><a href="category-continuous-update.html">持续更新</a></li></ul>
+    </div>
+    <div>
+      <h2>站内入口</h2>
+      <ul>
+        <li><a href="categories.html">分类总览</a></li>
+        <li><a href="rankings.html">热门排行榜</a></li>
+        <li><a href="search.html">片库搜索</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 热门亚洲影视 · 精选内容持续更新</div>
+</footer>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
